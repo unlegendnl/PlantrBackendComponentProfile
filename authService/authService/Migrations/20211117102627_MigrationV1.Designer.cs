@@ -8,7 +8,7 @@ using authService.Context;
 
 namespace authService.Migrations
 {
-    [DbContext(typeof(UserContext))]
+    [DbContext(typeof(ProfileContext))]
     [Migration("20211117102627_MigrationV1")]
     partial class MigrationV1
     {

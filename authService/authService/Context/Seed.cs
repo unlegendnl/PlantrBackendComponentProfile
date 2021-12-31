@@ -9,32 +9,24 @@ namespace authService.Context
 {
     public static class Seed
     {
-        public static void SeedDb(this UserContext dbContext)
+        public static void SeedDb(this ProfileContext dbContext)
         {
-            if (!dbContext.Users.Any())
+            if (!dbContext.Profiles.Any())
             {
-                dbContext.Users.Add(new User
+                dbContext.Profiles.Add(new Profile
                 {
-                    UserName = "miguel",
-                    Password = "jemoeder",
-                    Admin = true,
-                    Email = "msc@msc.com"
-
-                    //uid auto generated
-                });;
-                dbContext.Users.Add(new User
-                {
-                    UserName = "johnny",
-                    Password = "jemoeder",
-                    Admin = false,
-                    Email = "msc@msc.com"
+                    Biography = "plant lover to the max",
+                    ProfilePicture = "1.jpeg"
                 });
-                dbContext.Users.Add(new User
+                dbContext.Profiles.Add(new Profile
                 {
-                    UserName = "hans",
-                    Password = "jemoeder",
-                    Admin = false,
-                    Email = "msc@msc.com"
+                    Biography = "wokkels zijn lekker",
+                    ProfilePicture = "2.jpeg"
+                });
+                dbContext.Profiles.Add(new Profile
+                {
+                    Biography = "johnny is on another level",
+                    ProfilePicture = "3.jpeg"
                 });
 
                 dbContext.SaveChanges();

@@ -7859,11 +7859,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\migue\\OneDrive\\Documenten\\PlantrBackendComponent\\authService\\authService\\authService.csproj",
-      "projectName": "authService",
-      "projectPath": "C:\\Users\\migue\\OneDrive\\Documenten\\PlantrBackendComponent\\authService\\authService\\authService.csproj",
+      "projectUniqueName": "C:\\Users\\migue\\OneDrive\\Documenten\\PlantrBackendComponentProfile\\authService\\authService\\profileService.csproj",
+      "projectName": "profileService",
+      "projectPath": "C:\\Users\\migue\\OneDrive\\Documenten\\PlantrBackendComponentProfile\\authService\\authService\\profileService.csproj",
       "packagesPath": "C:\\Users\\migue\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\migue\\OneDrive\\Documenten\\PlantrBackendComponent\\authService\\authService\\obj\\",
+      "outputPath": "C:\\Users\\migue\\OneDrive\\Documenten\\PlantrBackendComponentProfile\\authService\\authService\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\migue\\AppData\\Roaming\\NuGet\\NuGet.Config",

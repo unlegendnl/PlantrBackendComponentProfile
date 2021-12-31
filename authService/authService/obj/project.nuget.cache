@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6XQeWuBqir8uCUtUQxGbIPAZWlYAeT96RAYou5Ugh2xu273ZrScp0wX3+qPFrXqbnmHjsZfRz6NrH6/PaMEKdA==",
+  "dgSpecHash": "Lr6DAg0RcG2IfoiNusb48sAyTRaGYTpG2RhTTheAB1xZA2ToVmzcTmonDIXTQJ+VMrOhDtzZJjHwBoNSf3Zaww==",
   "success": true,
-  "projectFilePath": "C:\\Users\\migue\\OneDrive\\Documenten\\PlantrBackendComponent\\authService\\authService\\authService.csproj",
+  "projectFilePath": "C:\\Users\\migue\\OneDrive\\Documenten\\PlantrBackendComponentProfile\\authService\\authService\\profileService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\migue\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\migue\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.7\\microsoft.aspnet.webapi.client.5.2.7.nupkg.sha512",

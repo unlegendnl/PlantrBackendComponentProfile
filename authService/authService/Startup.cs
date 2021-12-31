@@ -49,7 +49,7 @@ namespace authService
             services.AddMvc();
 
             //database connection
-            services.AddDbContext<UserContext>(options => options.UseSqlServer(Configuration.GetConnectionString("auth-db")));
+            services.AddDbContext<ProfileContext>(options => options.UseSqlServer(Configuration.GetConnectionString("auth-db")));
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
@@ -59,7 +59,7 @@ namespace authService
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, UserContext context)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ProfileContext context)
         {
 
             app.UseDeveloperExceptionPage();
@@ -77,7 +77,7 @@ namespace authService
 
             using (var serviceScope = app.ApplicationServices.GetRequiredService<IServiceScopeFactory>().CreateScope())
             {
-                var x = serviceScope.ServiceProvider.GetService<UserContext>();
+                var x = serviceScope.ServiceProvider.GetService<ProfileContext>();
                 x.Database.EnsureCreated();
             }
 

@@ -7,13 +7,13 @@ using authService.Models;
 
 namespace authService.Context
 {
-    public class UserContext : DbContext
+    public class ProfileContext : DbContext
     {
-        public UserContext(DbContextOptions options) : base(options)
+        public ProfileContext(DbContextOptions options) : base(options)
         {
 
         }
 
-        public DbSet<User> Users { get; set; }
+        public DbSet<Profile> Profiles { get; set; }
     }
 }
