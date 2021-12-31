@@ -20,4 +20,4 @@ RUN dotnet publish "authService/profileService.csproj" -c Release -o /app/publis
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "authService.dll"] 
+ENTRYPOINT ["dotnet", "profileService.dll"] 
