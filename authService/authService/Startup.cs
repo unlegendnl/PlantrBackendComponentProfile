@@ -1,4 +1,5 @@
 using authService.Context;
+using Confluent.Kafka;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -47,6 +48,14 @@ namespace authService
                 };
             });
             services.AddMvc();
+
+            ConsumerConfig config = new ConsumerConfig
+            {
+                BootstrapServers = "kafka-service:9092",
+                GroupId = "group1",
+                AutoOffsetReset = AutoOffsetReset.Earliest,
+                EnableAutoCommit = false,
+            };
 
             //database connection
             services.AddDbContext<ProfileContext>(options => options.UseSqlServer(Configuration.GetConnectionString("auth-db")));

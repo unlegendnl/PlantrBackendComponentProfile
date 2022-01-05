@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "Lr6DAg0RcG2IfoiNusb48sAyTRaGYTpG2RhTTheAB1xZA2ToVmzcTmonDIXTQJ+VMrOhDtzZJjHwBoNSf3Zaww==",
+  "dgSpecHash": "4ZQi8ck+SHA4oo2qL4prKVQQcp0KE5l+luWb+XEI25uO5btgjximpM19m7jMcv68+T+8aA5xTvulxJzYMAW7Aw==",
   "success": true,
   "projectFilePath": "C:\\Users\\migue\\OneDrive\\Documenten\\PlantrBackendComponentProfile\\authService\\authService\\profileService.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\migue\\.nuget\\packages\\confluent.kafka\\1.8.2\\confluent.kafka.1.8.2.nupkg.sha512",
+    "C:\\Users\\migue\\.nuget\\packages\\confluent.kafka.dependencyinjection\\2.0.0\\confluent.kafka.dependencyinjection.2.0.0.nupkg.sha512",
     "C:\\Users\\migue\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\migue\\.nuget\\packages\\librdkafka.redist\\1.8.2\\librdkafka.redist.1.8.2.nupkg.sha512",
     "C:\\Users\\migue\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.7\\microsoft.aspnet.webapi.client.5.2.7.nupkg.sha512",
     "C:\\Users\\migue\\.nuget\\packages\\microsoft.aspnet.webapi.core\\5.2.7\\microsoft.aspnet.webapi.core.5.2.7.nupkg.sha512",
     "C:\\Users\\migue\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\5.0.12\\microsoft.aspnetcore.authentication.jwtbearer.5.0.12.nupkg.sha512",
@@ -100,6 +103,7 @@
     "C:\\Users\\migue\\.nuget\\packages\\system.io.filesystem.primitives\\4.3.0\\system.io.filesystem.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\migue\\.nuget\\packages\\system.linq\\4.3.0\\system.linq.4.3.0.nupkg.sha512",
     "C:\\Users\\migue\\.nuget\\packages\\system.linq.expressions\\4.3.0\\system.linq.expressions.4.3.0.nupkg.sha512",
+    "C:\\Users\\migue\\.nuget\\packages\\system.memory\\4.5.0\\system.memory.4.5.0.nupkg.sha512",
     "C:\\Users\\migue\\.nuget\\packages\\system.net.http\\4.3.0\\system.net.http.4.3.0.nupkg.sha512",
     "C:\\Users\\migue\\.nuget\\packages\\system.net.nameresolution\\4.3.0\\system.net.nameresolution.4.3.0.nupkg.sha512",
     "C:\\Users\\migue\\.nuget\\packages\\system.net.primitives\\4.3.0\\system.net.primitives.4.3.0.nupkg.sha512",
