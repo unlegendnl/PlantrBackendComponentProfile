@@ -12,7 +12,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
-
+using profileService.EventHandler;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -56,6 +56,13 @@ namespace authService
                 AutoOffsetReset = AutoOffsetReset.Earliest,
                 EnableAutoCommit = false,
             };
+
+            var builder = new ConsumerBuilder<Ignore, string>(config).Build();
+            var producer = new ProducerBuilder<string, string>(config).Build();
+
+            builder.Subscribe("newAccountEvent");
+
+            services.AddHostedService(sp => new KafkaEventHandler(builder, services.BuildServiceProvider().GetRequiredService<ProfileContext>()));
 
             //database connection
             services.AddDbContext<ProfileContext>(options => options.UseSqlServer(Configuration.GetConnectionString("auth-db")));
